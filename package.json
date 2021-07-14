@@ -1,0 +1,22 @@
+{
+  "name": "electron-test",
+  "description": "Test yarn electron app",
+  "author": "Greg",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pkg": "node electron-package.js",
+    "package-win": "electron-packager . \"Electron Win Test App\" --overwrite  --platform=win32 --arch=x64  --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Win Test App\"",
+    "package-mac": "electron-packager . \"Electron Mac Test App\" --overwrite  --platform=darwin --arch=x64  --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Mac Test App\""
+  },
+  "devDependencies": {
+    "electron": "^13.1.6",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "electron-rebuild": "^2.3.5"
+  }
+}
