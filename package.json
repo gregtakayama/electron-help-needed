@@ -13,10 +13,10 @@
   },
   "devDependencies": {
     "electron": "^13.1.6",
-    "electron-packager": "^15.2.0"
+    "electron-packager": "^15.2.0",
+    "electron-rebuild": "^2.3.5"
   },
   "dependencies": {
-    "canvas": "^2.8.0",
-    "electron-rebuild": "^2.3.5"
+    "canvas": "^2.8.0"
   }
 }
